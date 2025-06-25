@@ -1,0 +1,14 @@
+* {
+    font-family: 'Barlow', 'Fraunces';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+:root {
+    --red-bg:hsl(7, 99%, 70%);
+    --yellow-bg:hsl(51, 100%, 49%);
+    --blue-text:hsl(198, 62%, 26%);
+    --green-footer:hsl(167, 34%, 41%);
+}
