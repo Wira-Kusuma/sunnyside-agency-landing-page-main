@@ -12,3 +12,219 @@
     --blue-text:hsl(198, 62%, 26%);
     --green-footer:hsl(167, 34%, 41%);
 }
+
+body,html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,h2 {
+    font-family: 'fraunces';
+}
+
+p {
+    font-family: 'Barlow';
+    font-size: 1rem;
+}
+
+img {
+    user-select: none;
+}
+
+/* btn */
+
+.btn1 {
+    all: unset;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-family: 'Fraunces';
+    color: black;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 0 2rem;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav a{
+    text-decoration:none;
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+main h1 {
+    font-size: 7rem;
+    font-family: 'fraunces';
+    word-spacing: 1.5rem;
+    color: white;
+}
+
+main img {
+    animation: ease-in-out infinite 1s bounce;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    width: 50%;
+    height: 100vh;
+}
+
+.card {
+    width: 50%;
+    padding: 8rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 2.5rem;
+}
+
+.bg1 {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+}
+
+.bg2 {
+    background-image: url(images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+}   
+
+.desc {
+    position: relative;
+    top:220px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.client-testi {
+    font-size: 2rem;
+}
+
+.con-client {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 20%;
+    gap: 2rem;
+}
+
+.client img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:700px) {
+    nav {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+    }
+
+    main h1 {
+        font-size: 5rem;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .con-client {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .client {
+        width: 100%;
+    }
+}
