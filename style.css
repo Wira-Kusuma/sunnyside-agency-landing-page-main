@@ -191,6 +191,44 @@ section img {
 @media screen and (max-width:1000px) {
     nav {
         display: none;
+        position: fixed;
+        top: 100px;
+        width: 80%;
+        flex-direction: column;
+        background-color: white;
+        padding: 2rem;
+        font-weight: 600;
+        box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.308);
+        opacity:0;
+    }
+
+    nav.aktif {
+        display: flex;
+        animation: slide ease-in-out 0.2s forwards;
+    }
+
+    @keyframes slide {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .btn1 {
+        background-color: var(--yellow-bg);
+    }
+
+    nav a {
+        color: black;
+        animation: slide ease-in-out 0.5s forwards;
+    }
+
+    .burger {
+        display: flex;
     }
 
     main {
