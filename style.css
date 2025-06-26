@@ -188,7 +188,7 @@ section img {
     border-radius: 50px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1000px) {
     nav {
         display: none;
     }
@@ -219,12 +219,75 @@ section img {
         height: auto;
     }
 
+    .card {
+        text-align: center;
+        gap: 2rem;
+        padding: 3rem 2rem;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .rev {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .b1 {
+        background-image: url(images/mobile/image-graphic-design.jpg);
+    }
+    
+    .b2 {
+        background-image: url(images/mobile/image-photography.jpg);
+    }
+
+    .bg1,.bg2 {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .bag2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .desc {
+        position: relative;
+        top: 150px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .client-testimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+    }
+
+    .client-testi {
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+    }
+
     .con-client {
         flex-direction: column;
-        width: 100%;
+        width: 80%;
+        gap: 5rem;
     }
 
     .client {
         width: 100%;
+        gap: 1.5rem;
     }
 }
