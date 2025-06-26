@@ -267,8 +267,8 @@ section img {
 }
 
 .client img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
 }
 
@@ -326,6 +326,11 @@ footer {
 
 .nav-btm a:hover {
     color: white;
+}
+
+footer p, footer p>a {
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 @media screen and (max-width:1000px) {
