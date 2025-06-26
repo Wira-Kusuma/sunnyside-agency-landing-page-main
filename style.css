@@ -42,7 +42,18 @@ img {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-family: 'Fraunces';
+    font-size: 0.9rem;
     color: black;
+    cursor: pointer;
+    transition: ease-in-out 0.2s ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 header {
@@ -61,11 +72,13 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    user-select: none;
 }
 
 nav a{
     text-decoration:none;
     color: white;
+    font-size: 0.9rem;
 }
 
 .burger {
@@ -136,6 +149,39 @@ section img {
     font-size: 2.5rem;
 }
 
+.card p {
+    font-size: 0.9rem;
+    color: var(--blue-text);
+    font-weight: 500;
+}
+
+.card .a1, .card .a2 {
+    all: unset;
+    font-family: 'Fraunces';
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.a1::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--yellow-bg);
+    position: relative;
+    box-shadow: 0 0 10px 4px var(--yellow-bg);
+}
+.a2::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--red-bg);
+    position: relative;
+    box-shadow: 0 0 10px 4px var(--red-bg);
+}
+
 .bg1 {
     background-image: url(images/desktop/image-graphic-design.jpg);
     background-repeat: no-repeat;
@@ -160,8 +206,22 @@ section img {
     gap: 3rem;
 }
 
+.bg1 .desc h2, .bg2 .desc h2{
+    opacity: 0.6;
+}
+
+.bg1 .desc p, .bg2 .desc p {
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.client-testimonial {
+    padding: 5rem 0;
+}
+
 .client-testi {
     font-size: 2rem;
+    opacity: 0.5;
 }
 
 .con-client {
@@ -170,6 +230,30 @@ section img {
     gap: 1rem;
     margin: auto;
     text-align: center;
+}
+
+.testimonial p {
+    font-size: 0.9rem;
+    color: var(--blue-text);
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user h2 {
+    font-size: 1rem;
+}
+
+.user p {
+    font-size: 0.8rem;
+    columns: var(--blue-text);
+    font-weight: 500;
+    opacity: 0.5;
 }
 
 .client {
@@ -221,6 +305,27 @@ footer {
 
 .icon img {
     cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.icons:hover {
+    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(200deg);
+}
+
+.nav-btm {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btm a {
+    text-decoration: none;
+    color: var(--blue-text);
+    font-weight: 600;
+    transition: ease-in-out 0.2s;
+}
+
+.nav-btm a:hover {
+    color: white;
 }
 
 @media screen and (max-width:1000px) {
@@ -234,7 +339,6 @@ footer {
         padding: 2rem;
         font-weight: 600;
         box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.308);
-        opacity:0;
     }
 
     nav.aktif {
@@ -259,6 +363,7 @@ footer {
 
     nav a {
         color: black;
+        opacity: 0.5;
         animation: slide ease-in-out 0.5s forwards;
     }
 
@@ -379,8 +484,4 @@ footer {
         height: 30vh;
     }
 
-    footer .nav-btm {
-        display: flex;
-        color: white;
-    }
 }
